@@ -6,7 +6,7 @@ import { Header } from "./components/Header/Header";
 import { Shoes } from "./components/Shoes/Shoes";
 import Shoe from "./components/Shoe/Shoe";
 import { HomePage } from "./components/HomePage/HomePage";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends React.Component {
   constructor(props) {
@@ -44,7 +44,6 @@ class App extends React.Component {
         />
       );
     });
-    console.log("YES");
   };
   handleCreate = async (e) => {
     this.setState({ isSpinning: true });

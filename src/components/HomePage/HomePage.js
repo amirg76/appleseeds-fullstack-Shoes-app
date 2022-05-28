@@ -5,6 +5,7 @@ export class HomePage extends React.Component {
     return (
       <div className="home-page">
         <img
+          alt="fff"
           className="home-img"
           src="./assets/images/shoe-background.jpg"
           style={{

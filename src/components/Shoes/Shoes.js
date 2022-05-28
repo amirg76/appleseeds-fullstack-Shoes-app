@@ -38,7 +38,6 @@ export class Shoes extends React.Component {
         />
       );
     });
-    console.log("YES");
   };
   handleCreate = async (e) => {
     this.setState({ isSpinning: true });
