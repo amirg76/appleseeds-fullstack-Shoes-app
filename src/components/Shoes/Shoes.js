@@ -103,41 +103,52 @@ export class Shoes extends React.Component {
   render() {
     return (
       <div className="main-continer">
-        <form>
-          <div className="main-form">
-            <div class="title">Welcome</div>
-            <div class="subtitle">Let's create your product!</div>
-            <div className="form-handle">
-              <input
-                id="newShoeName"
-                onChange={this.handleInputChange}
-                value={this.state.newShoeName}
-                placeholder="New shoe name"
-              />
-              <input
-                id="newShoePrice"
-                onChange={this.handleInputChange}
-                value={this.state.newShoePrice}
-                placeholder="New shoe price"
-              />
-              <input
-                id="newShoeImg"
-                onChange={this.handleInputChange}
-                value={this.state.newShoeImg}
-                placeholder="New shoe image"
-              />
-              <button
-                type="button"
-                className="submit-btn"
-                onClick={this.handleCreate}
-              >
-                Create
-              </button>
-            </div>
+        {this.state.isSpinning ? (
+          <div className="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-        </form>
+        ) : (
+          <>
+            <form>
+              <div className="main-form">
+                <div class="title">Welcome</div>
+                <div class="subtitle">Let's create your product!</div>
+                <div className="form-handle">
+                  <input
+                    id="newShoeName"
+                    onChange={this.handleInputChange}
+                    value={this.state.newShoeName}
+                    placeholder="New shoe name"
+                  />
+                  <input
+                    id="newShoePrice"
+                    onChange={this.handleInputChange}
+                    value={this.state.newShoePrice}
+                    placeholder="New shoe price"
+                  />
+                  <input
+                    id="newShoeImg"
+                    onChange={this.handleInputChange}
+                    value={this.state.newShoeImg}
+                    placeholder="New shoe image"
+                  />
+                  <button
+                    type="button"
+                    className="submit-btn"
+                    onClick={this.handleCreate}
+                  >
+                    Create
+                  </button>
+                </div>
+              </div>
+            </form>
 
-        <div className="item-wrapper">{this.showShoes()}</div>
+            <div className="item-wrapper">{this.showShoes()}</div>
+          </>
+        )}
       </div>
     );
   }

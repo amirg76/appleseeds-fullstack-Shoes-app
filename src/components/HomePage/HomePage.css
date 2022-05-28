@@ -1,18 +1,15 @@
 .home-page {
-  /* position: fixed;
-  top: 0; */
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  opacity: 0.9;
 }
-/* .home-page {
-  width: 60vw;
-  height: 100vh;
-  margin-top: auto;
-  text-align: center;
-  align-self: center;
-  background-position: center
-  background-repeat: no-repeat;
-  background-size: cover; */
-/* background: url("/public/assets/images/shoe-background.jpg") / no-repeat
-    center center/cover; */
-/* } */
-.home-img {
+.home-page a {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 30%;
+  z-index: 1;
+  font-size: 4vw;
+  color: black;
 }

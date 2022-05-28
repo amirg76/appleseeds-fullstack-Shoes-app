@@ -13,6 +13,17 @@
   height: 50vh;
   /* background: url("/public/assets/images/shoe-background.jpg") / no-repeat
     center center/cover; */
+  position: relative;
+  opacity: 0.9;
+}
+.home-page a {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 30%;
+  z-index: 1;
+  font-size: 4vw;
+  color: black;
 }
 .main-shoes-continer {
   display: flex;

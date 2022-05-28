@@ -120,41 +120,6 @@ class App extends React.Component {
             <div className="main-shoes-continer">
               <Route path="/shoes" exact component={Shoes} />
             </div>
-            {/* <div className="main-continer">
-          <form>
-            <div className="main-form">
-              <div class="title">Welcome</div>
-              <div class="subtitle">Let's create your product!</div>
-              <input
-                id="newShoeName"
-                onChange={this.handleInputChange}
-                value={this.state.newShoeName}
-                placeholder="New shoe name"
-              />
-              <input
-                id="newShoePrice"
-                onChange={this.handleInputChange}
-                value={this.state.newShoePrice}
-                placeholder="New shoe price"
-              />
-              <input
-                id="newShoeImg"
-                onChange={this.handleInputChange}
-                value={this.state.newShoeImg}
-                placeholder="New shoe image"
-              />
-              <button
-                type="button"
-                className="submit-btn"
-                onClick={this.handleCreate}
-              >
-                Create
-              </button>
-            </div>
-          </form>
-
-          <div className="item-wrapper">{this.showShoes()}</div>
-        </div> */}
           </BrowserRouter>
         </div>
       </>

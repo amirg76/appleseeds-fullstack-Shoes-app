@@ -4,6 +4,7 @@ export class HomePage extends React.Component {
   render() {
     return (
       <div className="home-page">
+        <a href="/shoes">Lets Find Some Shoes</a>
         <img
           alt="fff"
           className="home-img"

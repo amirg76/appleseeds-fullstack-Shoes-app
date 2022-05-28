@@ -14,6 +14,7 @@
   width: 100%;
 }
 .item-detil {
+  margin-top: 4vh;
 }
 .buttons-item {
   display: flex;
