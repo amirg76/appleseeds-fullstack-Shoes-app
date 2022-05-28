@@ -1,0 +1,103 @@
+.popup-continer {
+  position: absolute;
+  top: 0;
+  width: 20vw;
+  bottom: 0;
+
+  background-color: gray;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.popup-card-delete {
+  width: 20vw;
+  background-color: white;
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: blue;
+  padding: 1vw;
+}
+.popup-card-delete button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1vw;
+  height: 3vh;
+  margin: 3vh 0.2vw;
+  text-align: center;
+  width: 7vw;
+}
+.popup-card-update {
+  width: 20vw;
+  height: 50vh;
+  background-color: white;
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: blue;
+}
+.popup-card-update input {
+  border-radius: 12px;
+  font-size: 0.8vw;
+  height: 1vh;
+  width: 10vw;
+  padding: 1rem;
+  text-align: center;
+  margin: 1vh auto;
+}
+.buttons-update {
+  display: flex;
+}
+.buttons-update button {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 4vh;
+  margin: 3vh 1vw;
+  color: black;
+  text-align: center;
+  width: 7vw;
+}
+.popup-hidden {
+  display: none;
+}
+
+@media all and (max-width: 830px) {
+  .popup-card-update input {
+    font-size: 0.8vw;
+
+    width: 12vw;
+  }
+  .buttons-update button {
+    font-size: 1.5vw;
+    height: 2vh;
+  }
+  .popup-card-update {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media all and (max-width: 500px) {
+  .popup-continer {
+    left: 0;
+    width: 100%;
+  }
+  .popup-card-update {
+    width: 100%;
+  }
+}

@@ -1,0 +1,5 @@
+@media all and(max-width:825px) {
+  nav ul li a {
+    font-size: 2vw;
+  }
+}
