@@ -6,7 +6,7 @@ Code and document for the Shoes App With Api.
 
 This is project that made in appleSeeds bootCamp.
 
-\*\* How I Build The Project
+*** How I Build The Project
 
 I use REACT to build the project.
 
