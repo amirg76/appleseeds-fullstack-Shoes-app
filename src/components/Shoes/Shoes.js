@@ -49,6 +49,7 @@ export class Shoes extends React.Component {
     try {
       const postedData = await API.post("/shoes", newShoe);
       console.log(postedData);
+
       this.setState((prev) => {
         return {
           shoesArr: [...prev.shoesArr, postedData.data],
