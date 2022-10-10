@@ -1,6 +1,7 @@
 # Shoes App With Api
 
-
+<img src="public\assets\images\home-page.png" width="500">
+<img src="public\assets\images\shoe-page.png" width="500">
 
 **Version 1.00**
 
@@ -28,7 +29,7 @@ I use REACT ROUTER to handle page routing
 - I use a lot of method and separte the code
   to different files.
 
-- REACT COMPONENTS
+- REACT CLASS COMPONENTS
 - REACT ROUTER
 - API METHODS
 
